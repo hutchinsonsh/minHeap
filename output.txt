@@ -1,0 +1,47 @@
+Original min heap:2 4 11 8 10 49 17 250 13 32 
+
+Insert: 50
+Heap capacity reached. No more elements can be added
+
+Deletion/return min value section
+
+4 8 11 13 10 49 17 250 32 
+Min element deleted: 2
+
+8 10 11 13 32 49 17 250 
+Min element deleted: 4
+
+10 13 11 250 32 49 17 
+Min element deleted: 8
+
+11 13 17 250 32 49 
+Min element deleted: 10
+
+13 32 17 250 49 
+Min element deleted: 11
+
+17 32 49 250 
+Min element deleted: 13
+
+32 250 49 
+Min element deleted: 17
+
+49 250 
+Min element deleted: 32
+
+
+Deletion done; insertion section:
+10 250 49 
+10 20 49 250 
+10 20 49 250 40 
+10 20 20 250 40 49 
+
+
+Insertion done; Decrease key section:
+10 20 20 250 40 49 
+Element 2, from 20 to 9
+9 10 20 250 40 49 
+Element 1, from 9 to 5
+5 10 20 250 40 49 
+Element 6, from 49 to 10
+5 10 10 250 40 20 
